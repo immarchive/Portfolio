@@ -1,0 +1,143 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 9000;
+    padding: 0 0 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    color: #FCFDF8;
+    font-family: Arial;
+    font-size: 18px;
+    border-bottom: 1px solid #FCFDF8;
+    transition: all 800ms ease;
+
+    @include mobile{
+        height: 60px;
+    }
+
+    &.on{
+        top: -100px;
+    }
+
+    .logo-area{
+        width: 90px;
+        height: 26px;
+        margin: auto 0;
+        flex: 6.5;
+
+        @include mobile{
+            width: 80px;
+            flex: 1;
+        }
+
+        .logo{
+            background: url(../img/pf-logo.png);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+
+            @include mobile{
+                height: 90%;
+            }
+        }
+    }
+
+    .listen-area{
+        flex: 2;
+        min-width: 194px;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        color: #ffa8bd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @include mobile{
+            flex: 1;
+            min-width: 100px;
+        }
+
+        .line{
+            width: 17px;
+            height: 16px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+
+            .bar{
+                width: 3px;
+                background: #ffa8bd;
+                animation: none;
+
+                &.one{
+                    height: 16px;
+                    animation-name: music01;
+                }
+                &.two{
+                    height: 10px;
+                    animation-delay: 0.2s;
+                    animation-name: music02;
+                }
+                &.three{
+                    height: 14px;
+                    animation-delay: 0.3s;
+                    animation-name: music03;
+                }
+
+                @keyframes music01 {
+                    0% { height: 0; will-change: height; }
+                    50% { height: 16; will-change: height; }
+                    100% { height: 16; will-change: height; }
+                }
+                @keyframes music02 {
+                    0% { height: 0; will-change: height; }
+                    100% { height: 10; will-change: height; }
+                }
+                @keyframes music03 {
+                    0% { height: 0; will-change: height; }
+                    100% { height: 14; will-change: height; }
+                }
+
+                &.on{
+                animation-duration: 0.5s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                }
+            }
+        }
+
+        .text{
+            span{
+                @include mobile{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .num-area{
+        flex: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 140px;
+
+        @include mobile{
+            flex: 1;
+        }
+
+        span{
+            font-size: 15px;
+            font-family: PhaseA;
+
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+}

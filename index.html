@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
+	
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- @@ 커서 -->
+    <div class="cursor"></div>
+    <div class="cursor cursor1"></div>
+    <div class="cursor cursor1"></div>
+    <div class="cursor cursor1"></div>
+    <div class="cursor cursor2"></div>
+    <div class="cursor cursor2"></div>
+    <div class="cursor cursor2"></div>
+    <div class="cursor cursor2"></div>
+    <!-- @@ BGM -->
+    <audio src="./assets/media/bgm.mp3" loop id="bgm" class="blind"></audio>
+
+
+    <!-- @@ 헤더 영역 -->
+    <header class="header">
+        <!-- @@ 로고 -->
+        <div class="logo-area">
+            <h1 class="logo">
+                <a href=""><span class="blind">RCA Records</span></a>
+            </h1>
+        </div>
+        <!-- @@ 뮤직 -->
+        <div class="listen-area">
+            <div class="line">
+                <i class="bar one"></i>
+                <i class="bar two"></i>
+                <i class="bar three"></i>
+            </div>
+            <div class="text"><span>Play</span></div>
+        </div>
+        <!-- @@ 연락처 -->
+        <div class="num-area">
+            <span>010 3071 9311</span>
+        </div>
+    </header>
+
+
+    <!-- @@ 콘텐츠 영역 -->
+    <main class="container">
+        <section class="sc-visual">
+            <h2 class="blind">이미지와 슬로건</h2>
+            <div class="bg-area">
+                <img src="./assets/img/main1.jpg" alt id="mainBg">
+            </div>
+
+            <div class="word-area">
+                <div class="wrap">
+                    <span class="word">Faithful</span>
+                    <span class="word">to the</span>
+                    <span class="word">Basics.</span>
+                </div>
+                <div class="wrap">
+                    <span class="word">&nbsp Faithful</span>
+                    <span class="word">to the</span>
+                    <span class="word">Basics.</span>
+                </div>
+            </div>
+
+            <div role="button" class="fix-stiker">
+                <span>Work<br>Together</span>
+            </div>
+        </section>
+
+        <section class="sc-project">
+            <h2 class="blind">프로젝트</h2>
+            <div class="group-txt">
+                <div class="txt-wrapper">
+                    <div class="flowtxt-area">
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/YSL/" target="_blank">
+                        <img src="./assets/img/pj-ysl.jpg" alt>
+                        <div class="bg gold"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">Yves Sanint Laurent</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC/Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Yves Sanint Laurent</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC/Mobile-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">YSL</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#GSAP</span><span class="tag">#jQuery</span><span class="tag">#SCSS</span><span class="tag">#PC/Mobile</span></span>
+                            <p class="desc">Revanesse 사이트를 래퍼런스로 참고하여 작업한 YSL 반응형 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/Kinolights/" target="_blank">
+                        <img src="./assets/img/pj-kino.jpg" alt>
+                        <div class="bg navy"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">Kinolights</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Kinolights</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Kinolights</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">Kinolights</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#JSON</span><span class="tag">#Swiper</span><span class="tag">#jQuery</span><span class="tag">#Mobile</span></span>
+                            <p class="desc">JSON을 통한 데이터를 사용해 클론코딩한 Mobile 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/SKtheCareers/" target="_blank">
+                        <img src="./assets/img/pj-sk.jpg" alt>
+                        <div class="bg orange"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">SK the Careers</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">SK the Careers</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">SK the Careers</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#FullPage</span><span class="tag">#Swiper</span><span class="tag">#jQuery</span><span class="tag">#PC</span></span>
+                            <p class="desc">풀페이지 스크립트를 중점으로 클론코딩한 PC 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/NaverCareers/" target="_blank">
+                        <img src="./assets/img/pj-naverc.jpg" alt>
+                        <div class="bg purple"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">NAVER Careers</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC/Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">NAVER Careers</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC/Mobile-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">NAVER Careers</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#Select</span><span class="tag">#Swiper</span><sapn class="tag">#jQuery</sapn><span class="tag">#PC/Mobile</span></span>
+                            <p class="desc">셀렉트 비주얼 선택과 데이터 수집이 동반되게끔 클론코딩한 반응형 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/Andar/" target="_blank">
+                        <img src="./assets/img/pj-andar.jpg" alt>
+                        <div class="bg brown"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">Andar</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Andar</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Andar</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">Mobile-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">Andar</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#Swiper</span><span class="tag">#jQuery</span><span class="tag">#Mobile</span></span>
+                            <p class="desc">동일 클래스 사용을 통해 효과적인 마크업에 중점을 두고 클론코딩한 Mobile 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/NAVER/" target="_blank">
+                        <img src="./assets/img/pj-naver.jpg" alt>
+                        <div class="bg green"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">NAVER</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">NAVER</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">NAVER</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">NAVER</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#마크업</span><span class="tag">#IR기법</span><span class="tag">#PC</span></span>
+                            <p class="desc">마크업과 웹표준에 중점을 두고 클론코딩한 PC 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-pj">
+                <div class="thumb-area">
+                    <a href="https://immarchive.github.io/SeoulCityHall/" target="_blank">
+                        <img src="./assets/img/pj-seoul.jpg" alt>
+                        <div class="bg grey"></div>
+                        <div class="flowtxt-area">
+                            <div class="wrap">
+                                <span class="tit">Seoul City Hall</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Seoul City Hall</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                            <div class="wrap">
+                                <span class="tit">Seoul City Hall</span>
+                                <button type="button" class="btn-go">GO!</button>
+                                <span class="desc">PC-</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="cont-area">
+                        <div class="txt-wrap">
+                            <em class="tit">Seoul City Hall</em>
+                            <a href="" class="btn-review">Code Review →</a>
+                        </div>
+                        <div class="txt-wrap">
+                            <span><span class="tag">#마크업</span><span class="tag">#웹접근성</span><span class="tag">#PC</span></span>
+                            <p class="desc">Tab키로 이동이 가능하게 하여 웹접근성에 중점을 두고 클론코딩한 PC 사이트입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group-txt">
+                <div class="txt-wrapper">
+                    <div class="flowtxt-area">
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                        <div class="wrap">
+                            <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span> <span class="txt">Project list</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-story box inner">
+            <div class="swiper story-slide">
+                <div class="group-tit">
+                    <h2 class="sc-tit">My Story</h2>
+                    <div class="swiper-btn-box">
+                        <button type="button" class="btn prev"><span class="blind">이전</span></button>
+                        <button type="button" class="btn next"><span class="blind">다음</span></button>
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cont-wrapper">
+                            <div class="text-area">
+                                <span class="type">2018.02</span>
+                                <span class="thumb-tit">계원예술대학교 졸업</span>
+                                <span class="story">디자인, 드로잉, 영상, 개발, 3D 다양한 분야를 접할 수 있는 '디지털미디어디자인' 학과를 졸업하였습니다. 1학년을 마치고 디자인을 전공으로 선택하였지만, 기획・디자인・개발 전공자들이 함께 하는 졸업작품 진행 과정에서 개발이라는 분야에 깊게 생각하게 되었습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cont-wrapper">
+                            <div class="text-area">
+                                <span class="type">2022.10</span>
+                                <span class="thumb-tit">편집디자이너 퇴사</span>
+                                <span class="story">코로나19로 인한 업무 감소로 배우고 싶었던 코딩 공부를 시작하게 되었습니다. <br>쉽지 않았지만 끝내 구현해내는 일이 매력적으로 느껴져 입사 5년차에 웹퍼블리셔로의 커리어 전환을 결심하고 퇴사하였습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cont-wrapper">
+                            <div class="text-area">
+                                <span class="type">2023.02</span>
+                                <span class="thumb-tit">Velog 작성 시작</span>
+                                <span class="story">본격적으로 퍼블리싱 공부를 시작하고 Velog를 통해 배운 내용을 정리하기 시작하였습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cont-wrapper">
+                            <div class="text-area">
+                                <span class="type">2023.03</span>
+                                <span class="thumb-tit">올라운드프렌즈 웹퍼블리셔 과정 수료</span>
+                                <span class="story">비전공자 포지션으로 매주 새로운 프로젝트를 수행하며 3개월 과정의 웹퍼블리셔 수업을 성공적으로 수료하였습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cont-wrapper">
+                            <div class="text-area">
+                                <span class="type">2023.04</span>
+                                <span class="thumb-tit">포트폴리오 제작</span>
+                                <span class="story">3개월 동안 배운 내용을 토대로 웹 접근성을 준수한 반응형 포트폴리오를 제작하였습니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sc-vision box inner">
+            <div class="group-tit">
+                <h2 class="sc-tit">The Goal</h2>
+            </div>
+
+            <p class="goal">
+            무엇이든 기본이 제일 중요하다고 생각합니다. 웹 표준을 기반으로 웹 접근성을 고려한 시멘틱 마크업을 통해 차별없이 최적화된 웹을 제공하고자 합니다.
+            새로운 것을 배우는 행위에 거부감이 없고 모르는 내용을 마주하였을 때 스스로 해결해내는 것을 좋아합니다.
+            이러한 성향을 바탕으로 탄탄한 베이스의 퍼블리셔가 되기 위해 배움을 멈추지 않을 것이며,
+            나아가 단순 구현이 아닌 다양한 라이브러리의 원리를 이해할 수 있는 프론트엔드 개발자로 성장하는 것이 제 목표입니다.
+            </p>
+
+        </section>
+
+        <section class="sc-type">
+            <h2 class="blind">성향, 특징</h2>
+            <div class="group-circle">
+                <div class="circle one">
+                    <span>미래지향적</span>
+                </div>
+                <div class="circle two">
+                    <span>INTJ</span>
+                </div>
+                <div class="circle three">
+                    <span>조용한<br>한방</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- @@ 푸터 영역 -->
+    <footer class="footer">
+        <section class="sc-email">
+            <h3>Be always ready.</h3>
+            <span class="email">imyoox@gmail.com</span>
+        </section>
+        <div class="footer-wrap">
+            <section class="sc-link inner">
+                <h3 class="blind">링크 바로가기</h3>
+                <ul class="link-list">
+                    <li class="link-item"><a href="https://github.com/immarchive" target="_blank">Github 🛠</a></li>
+                    <li class="link-item"><a href="https://velog.io/@imyoox" target="_blank">Velog 🏡</a></li>
+                </ul>
+            </section>
+            <section class="sc-info">
+                <h3 class="blind">카피라이트 및 로고</h3>
+                <div class="column-left">
+                    <span class="copy">ⓒ 2023. DANAH LIM</span>
+                </div>
+                <div class="column-right">
+                    <h2 class="logo">
+                        <a href=""><img src="./assets/img/pf-logo.png" alt></a>
+                    </h2>
+                </div>
+            </section>
+        </div>
+    </footer>
+    
+</body>
+</html>

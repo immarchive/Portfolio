@@ -1,0 +1,33 @@
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.cursor{
+    position: fixed;
+    top: 0; left: 0;
+    width: 5px;
+    height: 5px;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    z-index: 9000;
+    pointer-events: none;
+    border-radius: 50%;
+    filter: blur(3px);
+    /* mix-blend-mode: difference; */
+
+    &.cursor1{
+        filter: blur(1.5px);
+    }
+    &.cursor2{
+        filter: none;
+    }
+}
