@@ -783,7 +783,7 @@ html {
   justify-content: space-between;
   align-items: flex-end;
   color: #050505;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (max-width: 1023px) {
   .sc-project .group-pj .thumb-area .cont-area {
@@ -834,8 +834,8 @@ html {
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .tit {
   display: inline-block;
-  margin-right: 15px;
-  font-size: 26px;
+  margin-right: 18px;
+  font-size: 28px;
   line-height: 30px;
   font-weight: 700;
 }
@@ -897,7 +897,7 @@ html {
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .tag {
   margin-right: 5px;
   font-family: AppleSDGothicNeo, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 @media (max-width: 767px) {
   .sc-project .group-pj .thumb-area .cont-area .txt-wrap .tag {
