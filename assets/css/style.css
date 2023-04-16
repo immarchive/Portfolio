@@ -131,6 +131,10 @@ fieldset {
   border: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .blind {
   position: absolute;
   width: 1px;
@@ -874,6 +878,9 @@ fieldset {
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review:hover {
   color: #fff;
+  border: 1px solid #fff;
+}
+.sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review.on {
   border: 1px solid #fff;
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .desc {

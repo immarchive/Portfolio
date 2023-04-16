@@ -112,13 +112,54 @@ $(function(){
     $(flowtxtHover).mouseover(function(){
         $(this).siblings('.bg').addClass('on')
         $(this).parent().siblings('.cont-area').addClass('on')
+        $(this).parent().siblings('.cont-area').find('.btn-review').addClass('on')
     });
     // 마우스 뗐을 때
     $(flowtxtHover).mouseout(function(){
         $(this).siblings('.bg').removeClass('on')
         $(this).parent().siblings('.cont-area').removeClass('on')
+        $(this).parent().siblings('.cont-area').find('.btn-review').removeClass('on')
     });
 
+
+
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.matchMedia({
+
+        "(min-width: 1280px)": function() {
+
+        gsap.set('.sc-story .group-tit',{yPercent:150, opacity:0})
+        gsap.set('.sc-story .swiper-wrapper',{yPercent:200, opacity:0})
+        gsap.set('.sc-vision .group-tit',{yPercent:150, opacity:0})
+        gsap.set('.sc-vision .goal',{yPercent:110, opacity:0})
+        storyShow = gsap.timeline({
+            scrollTrigger:{
+                trigger: '.sc-story',
+                start: '0% 60%',
+                end: '100% 40%',
+                scrub: 1
+            }
+        })
+        storyShow
+        .to('.sc-story .group-tit',{yPercent:0, opacity:1})
+        .to('.sc-story .swiper-wrapper',{yPercent:0, opacity:1})
+        .to('.sc-vision .group-tit',{yPercent:0, opacity:1})
+        .to('.sc-vision .goal',{yPercent:0, opacity:1})
+
+
+        gsap.set('.sc-type .circle',{opacity:0})
+        typeShow = gsap.timeline({
+            scrollTrigger:{
+                trigger: '.sc-type',
+                start: '0% 70%',
+                end: '100% 70%',
+                scrub: 1
+            }
+        })
+        typeShow
+        .to('.sc-type .circle',{opacity:1, stagger:0.05})
+    }
+});
 
 
 }) //삭제 금지

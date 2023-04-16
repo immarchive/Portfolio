@@ -356,16 +356,16 @@
                     color: #fff;
 
                     &::after{
-                    content: '';
-                    position: absolute;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    z-index: -100;
-                    background: linear-gradient(to top, black, black 0%, transparent);
-                    background-repeat: no-repeat;
-                    transition: all 500ms ease;
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        z-index: -100;
+                        background: linear-gradient(to top, black, black 0%, transparent);
+                        background-repeat: no-repeat;
+                        transition: all 500ms ease;
                     }
                 }
 
@@ -435,6 +435,9 @@
 
                         &:hover{
                             color: #fff;
+                            border: 1px solid #fff;
+                        }
+                        &.on{
                             border: 1px solid #fff;
                         }
                     }
