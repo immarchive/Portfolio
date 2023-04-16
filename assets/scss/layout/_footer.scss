@@ -50,6 +50,13 @@
                     font-size: 20px;
                     line-height: 32px;
                 }
+
+                a{
+                    &:hover{
+                        color: #CDF851;
+                        transition: all 1s ease;
+                    }
+                }
             }
         }
     }

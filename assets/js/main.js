@@ -106,20 +106,44 @@ $(function(){
 
 
     // 프로젝트 리스트 mouse hover 시
-    flowtxtHover = $('.sc-project .flowtxt-area')
+    // flowtxtHover = $('.sc-project .flowtxt-area')
+
+    // // 마우스 올렸을 때
+    // $(flowtxtHover).mouseover(function(){
+    //     $(this).siblings('.bg').addClass('on')
+    //     $(this).parent().siblings('.cont-area').addClass('on')
+    //     $(this).parent().siblings('.cont-area').find('.btn-review').addClass('on')
+    // });
+    // // 마우스 뗐을 때
+    // $(flowtxtHover).mouseout(function(){
+    //     $(this).siblings('.bg').removeClass('on')
+    //     $(this).parent().siblings('.cont-area').removeClass('on')
+    //     $(this).parent().siblings('.cont-area').find('.btn-review').removeClass('on')
+    // });
+
+
+    thumbtHover = $('.sc-project .thumb-area')
 
     // 마우스 올렸을 때
-    $(flowtxtHover).mouseover(function(){
-        $(this).siblings('.bg').addClass('on')
-        $(this).parent().siblings('.cont-area').addClass('on')
-        $(this).parent().siblings('.cont-area').find('.btn-review').addClass('on')
+    $(thumbtHover).mouseover(function(){
+        $(this).find('.bg').addClass('on')
+        $(this).find('.flowtxt-area').addClass('on')
+        $(this).children('.cont-area').addClass('on')
+        $(this).children('.cont-area').find('.btn-review').addClass('on')
     });
     // 마우스 뗐을 때
-    $(flowtxtHover).mouseout(function(){
-        $(this).siblings('.bg').removeClass('on')
-        $(this).parent().siblings('.cont-area').removeClass('on')
-        $(this).parent().siblings('.cont-area').find('.btn-review').removeClass('on')
+    $(thumbtHover).mouseout(function(){
+        $(this).find('.bg').removeClass('on')
+        $(this).find('.flowtxt-area').removeClass('on')
+        $(this).children('.cont-area').removeClass('on')
+        $(this).children('.cont-area').find('.btn-review').removeClass('on')
     });
+
+    // if ($('.bg').hasClass('on')) {
+    //     $(this).parents('.flowtxt-area').removeClass('on')
+    // } else {
+    //     $(this).parents('.flowtxt-area').addClass('on')
+    // }
 
 
 
@@ -131,7 +155,7 @@ $(function(){
         gsap.set('.sc-story .group-tit',{yPercent:150, opacity:0})
         gsap.set('.sc-story .swiper-wrapper',{yPercent:200, opacity:0})
         gsap.set('.sc-vision .group-tit',{yPercent:150, opacity:0})
-        gsap.set('.sc-vision .goal',{yPercent:110, opacity:0})
+        gsap.set('.sc-vision .goal span',{yPercent:110, opacity:0})
         storyShow = gsap.timeline({
             scrollTrigger:{
                 trigger: '.sc-story',
@@ -144,7 +168,7 @@ $(function(){
         .to('.sc-story .group-tit',{yPercent:0, opacity:1})
         .to('.sc-story .swiper-wrapper',{yPercent:0, opacity:1})
         .to('.sc-vision .group-tit',{yPercent:0, opacity:1})
-        .to('.sc-vision .goal',{yPercent:0, opacity:1})
+        .to('.sc-vision .goal span',{yPercent:0, opacity:1, stagger:0.05})
 
 
         gsap.set('.sc-type .circle',{opacity:0})

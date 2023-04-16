@@ -47,7 +47,7 @@
 }
 @font-face {
   font-family: AppleSDGothicNeo;
-  src: url(../fonts/AppleSDGothicNeoUL.ttf) format("ttf");
+  src: url(../fonts/AppleSDGothicNeoL.ttf) format("ttf");
   font-weight: 300;
   font-style: lighter;
 }
@@ -222,7 +222,7 @@ html {
   min-width: 194px;
   border-left: 1px solid white;
   border-right: 1px solid white;
-  color: #ffa8bd;
+  color: #FF4A23;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,7 +243,7 @@ html {
 }
 .header .listen-area .line .bar {
   width: 3px;
-  background: #ffa8bd;
+  background: #FF4A23;
   animation: none;
 }
 .header .listen-area .line .bar.one {
@@ -376,6 +376,10 @@ html {
     line-height: 32px;
   }
 }
+.footer .sc-link .link-list .link-item a:hover {
+  color: #CDF851;
+  transition: all 1s ease;
+}
 .footer .sc-info {
   display: flex;
   gap: 100px;
@@ -495,27 +499,26 @@ html {
 .box .group-tit .swiper-btn-box .btn.next {
   transform: rotate(180deg);
 }
-.box .text-area {
-  display: block;
-  margin-top: 28px;
-  font-weight: 400;
-  line-height: 1.2;
-}
-.box .text-area .type {
+.box .type {
   margin-right: 5px;
   color: #CDF851;
 }
 @media (max-width: 767px) {
-  .box .text-area .type {
-    font-size: 20px;
+  .box .type {
+    font-size: 18px;
   }
 }
-.box .text-area .type::before {
+.box .type::before {
   content: "•";
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 8px;
+}
+@media (max-width: 767px) {
+  .box .type::before {
+    margin-right: 3px;
+  }
 }
 
 .sc-visual {
@@ -696,7 +699,6 @@ html {
   background-color: #d2d2d2;
 }
 .sc-project .group-pj .thumb-area .flowtxt-area {
-  z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
@@ -721,6 +723,9 @@ html {
   }
 }
 .sc-project .group-pj .thumb-area .flowtxt-area:hover {
+  color: #FCFDF8;
+}
+.sc-project .group-pj .thumb-area .flowtxt-area.on {
   color: #FCFDF8;
 }
 .sc-project .group-pj .thumb-area .flowtxt-area .tit {
@@ -851,14 +856,12 @@ html {
   transition: all 300ms ease;
   border: 1px solid #000;
   border-radius: 25px;
-  padding: 2px 8px 3px 8px;
+  padding: 2px 8px;
 }
 @media (max-width: 1023px) {
   .sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review {
     height: 28px;
-    border: 1px solid #000;
-    border-radius: 25px;
-    padding: 2px 6px 3px 6px;
+    padding: 2px 6px;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -868,20 +871,19 @@ html {
   .sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review {
     height: 22px;
     font-size: 12px;
-    border: 1px solid #000;
-    border-radius: 25px;
+    line-height: 14px;
     padding: 2px 5px;
-    position: absolute;
     top: 35px;
     right: 20px;
   }
 }
-.sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review:hover {
-  color: #fff;
-  border: 1px solid #fff;
-}
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review.on {
   border: 1px solid #fff;
+}
+.sc-project .group-pj .thumb-area .cont-area .txt-wrap .btn-review.on:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .desc {
   font-family: AppleSDGothicNeo, sans-serif;
@@ -945,13 +947,14 @@ html {
 }
 
 .sc-vision .goal {
-  font-size: 28px;
-  line-height: 46px;
+  font-size: 32px;
+  line-height: 66px;
+  font-weight: 400;
 }
 @media (max-width: 1023px) {
   .sc-vision .goal {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 26px;
+    line-height: 46px;
   }
 }
 @media (max-width: 767px) {
@@ -959,6 +962,10 @@ html {
     font-size: 16px;
     line-height: 28px;
   }
+}
+.sc-vision .goal em {
+  font-weight: bold;
+  margin-right: 0;
 }
 
 .sc-type {
@@ -986,7 +993,6 @@ html {
   font-size: 46px;
   text-align: center;
   border-radius: 50%;
-  cursor: pointer;
 }
 @media (max-width: 1280px) {
   .sc-type .group-circle .circle {
