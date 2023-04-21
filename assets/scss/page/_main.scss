@@ -244,8 +244,16 @@
                 left: 0;
                 transition: all 350ms ease;
 
+                @include mobile{
+                    opacity: 0.8;
+                }
+
                 &.on{
                     opacity: 0;
+
+                    @include mobile{
+                        opacity: 0.8;
+                    }
                 }
                 &.gold{ background-color: #bb7b00; }
                 &.navy{ background-color: #005aee; }
@@ -365,6 +373,10 @@
                         background: linear-gradient(to top, black, black 0%, transparent);
                         background-repeat: no-repeat;
                         transition: all 500ms ease;
+
+                        @include mobile{
+                            background: none;
+                        }
                     }
                 }
 
@@ -441,7 +453,7 @@
                     }
 
                     .desc{
-                        font-family: AppleSDGothicNeo, sans-serif;
+                        font-family: Pretendard, sans-serif;
 
                         @include mobile{
                             font-size: 12px;
@@ -451,7 +463,7 @@
 
                     .tag{
                         margin-right: 5px;
-                        font-family: AppleSDGothicNeo, sans-serif;
+                        font-family: Pretendard, sans-serif;
                         font-size: 15px;
 
                         @include mobile{

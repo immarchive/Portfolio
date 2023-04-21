@@ -34,20 +34,20 @@
   font-style: normal;
 }
 @font-face {
-  font-family: AppleSDGothicNeo;
-  src: url(../fonts/AppleSDGothicNeoR.ttf) format("ttf");
+  font-family: Pretendard;
+  src: url(../fonts/Pretendard-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: AppleSDGothicNeo;
-  src: url(../fonts/AppleSDGothicNeoB.ttf) format("ttf");
+  font-family: Pretendard;
+  src: url(../fonts/Pretendard-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: bold;
 }
 @font-face {
-  font-family: AppleSDGothicNeo;
-  src: url(../fonts/AppleSDGothicNeoL.ttf) format("ttf");
+  font-family: Pretendard;
+  src: url(../fonts/Pretendard-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: lighter;
 }
@@ -106,7 +106,7 @@ ol, ul {
 
 body {
   background-color: #0F0E0E;
-  font-family: SuisseBP, Helvetica Neue, Arial, AppleSDGothicNeo, sans-serif;
+  font-family: SuisseBP, Pretendard, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-style: normal;
@@ -674,8 +674,18 @@ html {
   left: 0;
   transition: all 350ms ease;
 }
+@media (max-width: 767px) {
+  .sc-project .group-pj .thumb-area .bg {
+    opacity: 0.8;
+  }
+}
 .sc-project .group-pj .thumb-area .bg.on {
   opacity: 0;
+}
+@media (max-width: 767px) {
+  .sc-project .group-pj .thumb-area .bg.on {
+    opacity: 0.8;
+  }
 }
 .sc-project .group-pj .thumb-area .bg.gold {
   background-color: #bb7b00;
@@ -812,6 +822,11 @@ html {
   background-repeat: no-repeat;
   transition: all 500ms ease;
 }
+@media (max-width: 767px) {
+  .sc-project .group-pj .thumb-area .cont-area.on::after {
+    background: none;
+  }
+}
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap {
   padding: 20px;
 }
@@ -886,7 +901,7 @@ html {
   color: #000;
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .desc {
-  font-family: AppleSDGothicNeo, sans-serif;
+  font-family: Pretendard, sans-serif;
 }
 @media (max-width: 767px) {
   .sc-project .group-pj .thumb-area .cont-area .txt-wrap .desc {
@@ -896,7 +911,7 @@ html {
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .tag {
   margin-right: 5px;
-  font-family: AppleSDGothicNeo, sans-serif;
+  font-family: Pretendard, sans-serif;
   font-size: 15px;
 }
 @media (max-width: 767px) {
