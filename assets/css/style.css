@@ -786,7 +786,7 @@ html {
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 100px;
+  height: 80px;
   z-index: 1100;
   display: flex;
   flex-direction: row-reverse;
@@ -798,17 +798,18 @@ html {
 @media (max-width: 1023px) {
   .sc-project .group-pj .thumb-area .cont-area {
     display: block;
-    height: 130px;
+    height: 110px;
   }
 }
 @media (max-width: 767px) {
   .sc-project .group-pj .thumb-area .cont-area {
     display: block;
-    height: 140px;
+    height: 110px;
   }
 }
 .sc-project .group-pj .thumb-area .cont-area.on {
   color: #fff;
+  cursor: default;
 }
 .sc-project .group-pj .thumb-area .cont-area.on::after {
   content: "";
@@ -844,7 +845,6 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
   }
 }
 .sc-project .group-pj .thumb-area .cont-area .txt-wrap .tit {
@@ -888,7 +888,7 @@ html {
     font-size: 12px;
     line-height: 14px;
     padding: 2px 5px;
-    top: 35px;
+    top: 7px;
     right: 20px;
   }
 }
