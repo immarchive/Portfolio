@@ -176,7 +176,7 @@ $(function(){
             scrollTrigger:{
                 trigger: '.sc-type',
                 start: '0% 70%',
-                end: '100% 70%',
+                end: '100% 60%',
                 scrub: 1
             }
         })
